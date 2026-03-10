@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif ;
+
+}
+body{
+    background-color: #a31d0b;
+    background: linear-gradient(to right,rgb(69,17,17),rgb(205, 57, 57))
+
+}
+.container{
+    background: #e3cccc;
+    width: 450px;
+    padding:1.5rem;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 1,0.9);
+
+}
+form{
+    margin:0 2rem;
+}
+.form-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+input{
+    color:inherit;
+    width: 100%;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid #a31d0b;
+    padding-left: 1.5rem;
+    font-size: 15px;    
+}
+.input-group{
+    padding: 1% 0;
+    position: relative;
+}
+.input-group i{
+    position: absolute;
+    color: black;
+}
+input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom: 2px solid hsl(327, 90%, 28);
+}
+input::placeholder{
+    color: transparent;
+}
+label{
+    color: #757575;
+    position: relative;
+    left: 1.2em;
+    top:-1.3em;
+    cursor:auto;
+    transition: 0.3s ease all;
+}
+
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-2.5em;
+    color: hsl(0, 93%, 33%);
+    font-size:15px;
+}
+.recover{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.recover a{
+    text-decoration: none;
+    color:rgb(54, 54, 203);
+}
+.recover a:hover{
+    color:#5f0303;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.btn{
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-radius: 5px;
+    outline:none;
+    border: none;
+    width:100%;
+    background: rgb(165, 14, 14);
+    color:white;
+    cursor: pointer;
+    transition:0.1s;
+}
+.btn:hover{
+    background:#5f0303 ;
+}
+
+.choice{
+    margin-bottom: 2rem;
+    position: relative;
+    border: 2px solid #007bff;
+    width: 10rem;
+    height: 40px;
+    text-align:center;
+    background-color: white;
+    color: #007bff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.choice.p{
+    padding-left: 1rem ;
+}
+.choice.selected {
+  background-color: #1907ce;
+  color: rgb(0, 0, 0);
+}
+
+.checkbox{
+    cursor: pointer;
+    display:flex;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top:0.9rem;
+    font-weight: bold;
+}
+button{
+    color:#a31d0b;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+button:hover{
+    color: blue;
+    cursor: pointer;
+}
